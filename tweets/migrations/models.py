@@ -7,3 +7,6 @@ class Tweet(models.Model):
     content = models.TextField()
     location = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def__str__(self):
+        return f"{self.creator.username}" - {self.construct}
