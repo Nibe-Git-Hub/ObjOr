@@ -14,7 +14,7 @@ Installation Guide
 
 2. Set up a Python Virtual Environment
 
-3. Install Django
+3. Install Project Dependencies
 
 4. Configure Django Settings
 
@@ -73,10 +73,10 @@ source .venv/bin/activate
 
 You should see (.venv) prefixing your terminal prompt, indicating the virtual environment is active.
 
-3. Install Django
-With your virtual environment active, install Django:
+3. Install Project Dependencies
+Install all required Python packages using the requirements.txt file:
 
-pip install Django
+pip install -r requirements.txt
 
 4. Configure Django Settings
 Django needs to know where to find your HTML templates and static files (CSS, JS, images).
@@ -180,6 +180,7 @@ Abella/
 │   ├── main.html
 │   └── about.html
 ├── manage.py                # Django management script
+├── requirements.txt         # Project dependencies (new file)
 └── README.md                # This file
 
 Customization
